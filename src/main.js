@@ -12,6 +12,10 @@ import '@/styles/index.scss' // 全局css
 import App from './App'
 import store from './store'
 import router from './router'
+import * as filters from './filters'
+Object.keys(filters).forEach(key=>{
+  Vue.filter(key,filters[key])
+})
 
 import '@/icons' // icon
 import '@/permission' // permission control
