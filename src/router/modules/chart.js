@@ -42,6 +42,12 @@ const chartsRouter = {
         name: 'BasicLine',
         meta: { title: 'Basic Line', noCache: true }
     },
+    {
+        path: 'china-map',
+        component: () => import('@/views/charts/china-map'),
+        name: 'ChinaMap',
+        meta: { title: 'China Map', noCache: true }
+    },
   ]
 }
 
